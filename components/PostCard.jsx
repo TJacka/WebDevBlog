@@ -6,19 +6,19 @@ import { graphCMSImageLoader } from '../utils';
 
 const PostCard = ({ post }) => (
   <div className="bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
-    {/* <div className="relative shadow-md inline-block w-full h-60 lg:h-80 mb-6">
+    <div className="relative shadow-md inline-block w-full h-60 lg:h-80 mb-6">
       <Image
         unoptimized
-        loader={grpahCMSImageLoader}
+        loader={graphCMSImageLoader}
         alt={post.title}
         className="shadow-lg rounded-t-lg lg:rounded-lg"
         layout="fill"
         src={post.featuredImage.url}
       />
-    </div> */}
-    <div className="relative overflow-hidden shadow-md pb-80 mb-6">
-      <img src={post.featuredImage.url} alt="" className="object-top absolute h-80 w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
     </div>
+    {/* <div className="relative overflow-hidden shadow-md pb-80 mb-6">
+      <img src={post.featuredImage.url} alt="" className="object-top absolute h-80 w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
+    </div> */}
 
     <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold">
       <Link href={`/post/${post.slug}`}>{post.title}</Link>
@@ -48,7 +48,7 @@ const PostCard = ({ post }) => (
     </p>
     <div className="text-center">
       <Link href={`/post/${post.slug}`}>
-        <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Continue Reading</span>
+        <span className="transition duration-500 ease transform hover:bg-green-700 inline-block bg-blue-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Continue Reading</span>
       </Link>
     </div>
   </div>

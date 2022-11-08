@@ -34,7 +34,7 @@ export default function PostWidget({ categories, slug }) {
               alt={post.title}
               className='align-middle rounded-full' 
               width='40'
-              height='10'
+              height='20'
             />
           </div>
           <div className='flex-grow ml-4'>

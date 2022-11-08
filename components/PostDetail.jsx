@@ -25,7 +25,7 @@ export default function PostDetail({ post }) {
       case 'heading-three':
         return <h3 key={index} className="text-xl font-semibold mb-4">{modifiedText.map((item, i) => <div key={i}>{item}</div>)}</h3>;
       case 'paragraph':
-        return <p key={index} className="mb-8">{modifiedText.map((item, i) => <div key={i}>{item}</div>)}</p>;
+        return <div key={index} className="mb-8">{modifiedText.map((item, i) => <div key={i}>{item}</div>)}</div>;
       case 'heading-four':
         return <h4 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <div key={i}>{item}</div>)}</h4>;
       case 'image':
@@ -49,7 +49,7 @@ export default function PostDetail({ post }) {
 			<Image 
 				src={post.featuredImage.url} 
 				alt={post.title}
-				className='object-top h-full w-full rounded-t-lg'
+				className='object-top h-full w-full rounded-lg'
 				height='30'
 				width='30'
 			/>
