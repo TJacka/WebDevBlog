@@ -34,7 +34,8 @@ export default function PostDetail({ post }) {
             key={index}
             alt={obj.title}
             height={obj.height}
-            width={obj.width}
+            width="auto"
+			objectFit="fill"
             src={obj.src}
           />
         );
@@ -50,7 +51,7 @@ export default function PostDetail({ post }) {
 				src={post.featuredImage.url} 
 				alt={post.title}
 				className='object-top h-full w-full rounded-lg'
-				height='auto'
+				objectFit="fill"
 				width='auto'
 			/>
 		</div>

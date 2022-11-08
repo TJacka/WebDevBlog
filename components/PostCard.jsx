@@ -10,10 +10,11 @@ const PostCard = ({ post }) => (
       <Image
         unoptimized
         loader={graphCMSImageLoader}
+        src={post.featuredImage.url}
         alt={post.title}
         className="shadow-lg rounded-t-lg lg:rounded-lg"
         layout="fill"
-        src={post.featuredImage.url}
+        objectFit='cover'
       />
     </div>
     {/* <div className="relative overflow-hidden shadow-md pb-80 mb-6">
