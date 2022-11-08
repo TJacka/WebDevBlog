@@ -35,7 +35,7 @@ export default function PostDetail({ post }) {
             alt={obj.title}
             height={obj.height}
             width="auto"
-			objectFit="fill"
+			objectFit="cover"
             src={obj.src}
           />
         );
@@ -51,7 +51,7 @@ export default function PostDetail({ post }) {
 				src={post.featuredImage.url} 
 				alt={post.title}
 				className='object-top h-full w-full rounded-lg'
-				objectFit="fill"
+				objectFit="cover"
 				width='auto'
 			/>
 		</div>
@@ -68,7 +68,7 @@ export default function PostDetail({ post }) {
 					<p className='inline align-middle text-gray-700 ml-2 mr-6 pt-1'>{post.author.name}</p>
 				</div>
 				<div className="font-medium text-gray-700 pt-2">
-					<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-red-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-red-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="blue">
 						<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
 					</svg>
 					<span>
