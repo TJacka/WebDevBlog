@@ -46,12 +46,12 @@ export default function PostDetail({ post }) {
 	return (
 	<div className='bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8'>
 		<div className='relative overflow-hidden shadow-md mb-6'>
-			<Image 
+			<img 
 				src={post.featuredImage.url} 
 				alt={post.title}
 				className='object-top h-full w-full rounded-lg'
-				height='30'
-				width='30'
+				height='auto'
+				width='auto'
 			/>
 		</div>
 		<div className='px-4 lg:px-0'>
