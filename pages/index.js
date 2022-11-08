@@ -22,7 +22,7 @@ export default function Home({ posts }) {
       <FeaturedPosts />
       <div className="block lg:flex gap-8">
         <div className="categories">
-          <div className="lg:sticky relative top-24">
+          <div className="lg:sticky w-60 relative top-24">
             <Categories />
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function Home({ posts }) {
           ))}
         </div>
         <div className="recents">
-          <div className="lg:sticky relative top-24">
+          <div className="lg:sticky w-80 relative top-24">
             <PostWidget />
           </div>
         </div>

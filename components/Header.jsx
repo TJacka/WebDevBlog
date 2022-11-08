@@ -21,7 +21,7 @@ export default function Header() {
                                         <span className='cursor-pointer font-bold text-3xl text-white'>
                                                 Connecting The Dots
                                         </span>
-                                        <span className='cursor-pointer font-bold ml-10 text-xl text-slate-300'>
+                                        <span className='cursor-pointer font-bold ml-10 text-xl text-slate-200'>
                                                 Web Technology Blog
                                         </span>
                                 </div>
