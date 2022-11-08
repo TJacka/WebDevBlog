@@ -5,9 +5,7 @@ module.exports = {
     tailwindcss: {},
     autoprefixer: {},
     ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {}),
-  },
-  plugins: [
-      require('tailwindcss'),
-      require('autoprefixer'),
-  ]
+    // require('tailwindcss'),
+    // require('autoprefixer')
+  }
 }
