@@ -4,7 +4,7 @@ import moment from 'moment';
 import Link from 'next/link';
 import { getRecentPosts, getSimilarPosts } from '../services';
 import Image from 'next/image'
-import { grpahCMSImageLoader } from '../utils';
+import { graphCMSImageLoader } from '../utils';
 
 export default function PostWidget({ categories, slug }) {
   
@@ -29,7 +29,7 @@ export default function PostWidget({ categories, slug }) {
         <div key={post.title} className="flex items-center w-full mb-4">
           <div className='w-16 flex-none'>
             <Image 
-              loader={grpahCMSImageLoader}
+              loader={graphCMSImageLoader}
               src={post.featuredImage.url} 
               alt={post.title}
               className='align-middle rounded-full' 

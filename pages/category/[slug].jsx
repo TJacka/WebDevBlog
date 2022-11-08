@@ -3,8 +3,9 @@ import { useRouter } from 'next/router';
 import { getCategories, getCategoryPost } from '../../services';
 import { PostCard, Categories, Loader } from '../../components';
 
-export default function CategoryPost({ posts }) {
+const CategoryPost = ({ posts }) => {
   const router = useRouter();
+
   if (router.isFallback) {
     return <Loader />;
   }
@@ -18,7 +19,7 @@ export default function CategoryPost({ posts }) {
           ))}
         </div>
         <div className="col-span-1 lg:col-span-4">
-          <div className="relative lg:sticky top-24">
+          <div className="relative lg:sticky top-8">
             <Categories />
           </div>
         </div>
@@ -26,10 +27,12 @@ export default function CategoryPost({ posts }) {
     </div>
   );
 }
+export default CategoryPost;
 
 // Fetch data at build time
 export async function getStaticProps({ params }) {
   const posts = await getCategoryPost(params.slug);
+
   return {
     props: { posts }
   };
@@ -44,3 +47,4 @@ export async function getStaticPaths() {
     fallback: true,
   };
 }
+

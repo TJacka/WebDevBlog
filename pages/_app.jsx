@@ -1,12 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Layout } from '../components';
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css'; 
 
-export default function MyApp(pageProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
   );
 }
+
+export default MyApp;

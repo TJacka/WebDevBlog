@@ -20,7 +20,6 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <FeaturedPosts />
-      {/* <div className="grid grid-cols-1 lg:grid-cols-12 gap-12"> */}
       <div className="block lg:flex gap-8">
         <div className="categories">
           <div className="lg:sticky relative top-24">
