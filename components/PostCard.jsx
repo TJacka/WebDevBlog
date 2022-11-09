@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { graphCMSImageLoader } from '../utils';
 
 const PostCard = ({ post }) => (
-  <div className="rounded-lg p-0 pb-12">
+  <div className="rounded-lg p-0 pb-8">
     <Link href={`/post/${post.slug}`}>
       <div className='cursor-pointer'>
         <div className="grid grid-cols-2 shadow-zinc-400 shadow-inner rounded-md p-10 h-60 lg:h-80" style={{ backgroundImage: `url('${post.featuredImage.url}')` }}>
