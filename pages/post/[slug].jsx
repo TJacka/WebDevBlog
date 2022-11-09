@@ -13,9 +13,9 @@ const PostDetails = ({ post }) => {
 
   return (
       <div className="container mx-auto">
-        <div className="lg:flex gap-6">
-          <div>
-            <div className="relative lg:sticky w-80 top-24">
+        <div className="lg:flex gap-6 mx-5">
+          <div className=''>
+            <div className="relative lg:sticky w-80 top-24 xl:w-60 lg:w-40 xs:hidden sm:hidden md:hidden lg:flex">
                 <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />
             </div>
           </div>
@@ -27,7 +27,7 @@ const PostDetails = ({ post }) => {
             <Comments slug={post.slug} />
           </div>
           <div className="">
-            <div className="relative lg:sticky top-24 w-80">
+            <div className="relative lg:sticky top-24 w-80 xl:w-60 lg:w-40 xs:hidden sm:hidden md:hidden lg:flex">
               <Categories />
             </div>
           </div>

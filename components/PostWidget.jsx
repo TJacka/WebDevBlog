@@ -29,7 +29,7 @@ export default function PostWidget({ categories, slug }) {
         <div key={post.title} className="flex items-center w-full cursor-pointer">
             <Link href={`/post/${post.slug}`} key={post.title} className="text-md">
               <div className='flex mb-4'>
-                <div className='w-16 mt-1 flex-none'>
+                <div className='w-16 mt-1 flex-none xl:block lg:hidden'>
                   <Image 
                     loader={graphCMSImageLoader}
                     src={post.featuredImage.url} 
@@ -39,8 +39,8 @@ export default function PostWidget({ categories, slug }) {
                     height='50'
                   />
                 </div>
-                <div className='flex flex-col ml-4 mt-1'>
-                  <p className='text-gray-500 font-xs'>
+                <div className='flex flex-col xl:ml-4 lg:ml-0 mt-1'>
+                  <p className='text-gray-500 font-semibold text-sm'>
                     {moment(post.createdAt).format('MMM DD, YYYY')}
                   </p>
                   {post.title}

@@ -41,7 +41,7 @@ const PostCard = ({ post }) => (
                   </div>
                   <div>
                     <Link href={`/post/${post.slug}`}>
-                      <span className="transition duration-500 ease shadow-inner shadow-gray-400 transform hover:bg-blue-700 hover:text-white inline-block bg-blue-600 text-white text-lg font-bold rounded-full px-6 py-2 cursor-pointer">Continue Reading</span>
+                      <span className="transition duration-500 ease shadow-inner shadow-gray-400 transform hover:bg-blue-700 hover:text-white inline-block bg-blue-600 text-white text-lg font-bold rounded-full px-6 py-2 cursor-pointer xs:text-sm">Continue Reading</span>
                     </Link>
                   </div>
                 </div>  

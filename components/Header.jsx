@@ -13,7 +13,7 @@ export default function Header() {
           }, []);
   
   return (
-    <div className='container mx-auto pb-5 lg:sticky relative top-0 z-10 bg-black'>
+    <div className='container mx-auto pb-5 lg:sticky relative top-0 z-10 bg-black px-5'>
         <div className='border-b w-full inline-block border-silver-400 py-4 mb-2'>
                 <div className=''>
                         <Link href="/">
@@ -24,9 +24,9 @@ export default function Header() {
                                                 </span>
                                         </div>
                                         <div>
-                                                <span className='cursor-pointer font-bold ml-10 text-xl text-slate-300'>
+                                                <p className='cursor-pointer font-bold ml-10 text-xl text-slate-300 text-right'>
                                                         Web Technology Blog
-                                                </span>
+                                                </p>
                                         </div>
                                 </div>
                         </Link>
