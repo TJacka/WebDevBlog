@@ -18,7 +18,7 @@ const AdjacentPosts = ({ createdAt, slug }) => {
       {dataLoaded && (
         <>
           {adjacentPost.previous && (
-            <div className={`${adjacentPost.next ? 'col-span-1 lg:col-span-4' : 'col-span-1 lg:col-span-8'} adjacent-post rounded-lg relative h-72 `}>
+            <div className={`${adjacentPost.next ? 'col-span-1 lg:col-span-4' : 'col-span-1 lg:col-span-8'} adjacent-post rounded-lg relative h-72 mb-8 `}>
               <AdjacentPostCard post={adjacentPost.previous} position="LEFT" />
             </div>
           )}
