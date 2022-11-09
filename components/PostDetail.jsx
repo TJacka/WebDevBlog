@@ -45,8 +45,8 @@ export default function PostDetail({ post }) {
 	};
 
 	return (
-		<div className='bg-white shadow-lg rounded-lg pb-12 mb-8'>
-			<div className='relative overflow-hidden shadow-md mb-6'>
+		<div className='bg-white rounded-lg pb-4 mb-8'>
+			<div className='relative overflow-hidden mb-6 rounded-t-lg shadow-inner shadow-white'>
 				<img 
 					src={post.featuredImage.url} 
 					alt={post.title}
