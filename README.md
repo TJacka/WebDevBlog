@@ -22,6 +22,8 @@ NextJS, Tailwind, GraphQl, Hygraph headless CMS.
 
 Responsive design, Reviewable Comments. 
 
+<br>
+
 ## Optimizations:
 
 Update design, add guest user login and page for guest users to add posts. 
