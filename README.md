@@ -10,7 +10,7 @@
      
 <br>
      
-<img src="https://i.ibb.co/MZKHG0w/blogsite.jpg" alt="Portfolio image" border="0">
+<img src="https://i.ibb.co/rsT7LFT/blogsite.jpg" alt="Portfolio image" border="0">
 
 ## Tech used: 
      
