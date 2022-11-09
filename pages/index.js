@@ -20,13 +20,13 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <FeaturedPosts />
-      <div className="block lg:flex gap-8">
+      <div className="lg:flex gap-8">
         <div className="recents">
           <div className="lg:sticky w-80 relative top-24">
             <PostWidget />
           </div>
         </div>
-        <div className="top-24">
+        <div className="top-22">
           {posts.map((post) => (
             <PostCard post={post.node} key={[post.title]} />
           ))}

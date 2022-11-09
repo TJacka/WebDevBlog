@@ -11,7 +11,7 @@ const PostCard = ({ post }) => (
         <div className="grid grid-cols-2 shadow-zinc-400 shadow-inner rounded-md p-10 h-60 lg:h-80" style={{ backgroundImage: `url('${post.featuredImage.url}')` }}>
           <div className='flex flex-col justify-between w-full'>
             <div>
-              <h1 className="transition duration-700 mb-6 cursor-pointer hover:text-blue-400 text-4xl font-bold text-white text-shadow">
+              <h1 className="transition duration-700 mb-6 cursor-pointer hover:text-zinc-300 text-4xl font-bold text-white text-shadow">
                 {post.title}
               </h1>
               <div>

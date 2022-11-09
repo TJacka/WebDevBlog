@@ -12,14 +12,14 @@ const PostDetails = ({ post }) => {
   }
 
   return (
-      <div className="container mx-auto mb-8">
+      <div className="container mx-auto">
         <div className="lg:flex gap-6">
           <div>
             <div className="relative lg:sticky w-80 top-24">
                 <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />
             </div>
           </div>
-          <div className="relative top-2">
+          <div className="relative">
             <PostDetail post={post} />
             <Author author={post.author} />
             <AdjacentPosts slug={post.slug} createdAt={post.createdAt} />
