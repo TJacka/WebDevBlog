@@ -10,7 +10,7 @@
      
 <br>
      
-<img src="https://i.ibb.co/rsT7LFT/blogsite.jpg" alt="Portfolio image" border="0" style="border-radius: 10px">
+<img src="https://i.ibb.co/rsT7LFT/blogsite.jpg" alt="Portfolio image" border="0">
 
 ## Tech used: 
      
