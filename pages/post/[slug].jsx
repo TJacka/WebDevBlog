@@ -12,18 +12,22 @@ const PostDetails = ({ post }) => {
   }
 
   return (
-      <div className="container mx-auto px-10 mb-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          <div className="col-span-1 lg:col-span-8">
+      <div className="container mx-auto mb-8">
+        <div className="lg:flex gap-6">
+          <div>
+            <div className="relative lg:sticky w-80 top-24">
+                <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />
+            </div>
+          </div>
+          <div className="relative top-2">
             <PostDetail post={post} />
             <Author author={post.author} />
             <AdjacentPosts slug={post.slug} createdAt={post.createdAt} />
             <CommentsForm slug={post.slug} />
             <Comments slug={post.slug} />
           </div>
-          <div className="col-span-1 lg:col-span-4">
-            <div className="relative lg:sticky top-24">
-              <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />
+          <div className="">
+            <div className="relative lg:sticky top-24 w-80">
               <Categories />
             </div>
           </div>

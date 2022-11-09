@@ -45,43 +45,40 @@ export default function PostDetail({ post }) {
 	};
 
 	return (
-	<div className='bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8'>
-		<div className='relative overflow-hidden shadow-md mb-6'>
-			<img 
-				src={post.featuredImage.url} 
-				alt={post.title}
-				className='object-top h-full w-full rounded-lg'
-				objectFit="cover"
-				width='auto'
-			/>
-		</div>
-		<div className='px-4 lg:px-0'>
-			<div className='flex items-center mb-8 w-full'>
-				<div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
-					<Image 
-					alt={post.author.name} 
-					height='30'
-					width='30'
-					className='align-middle rounded-full'
-					src={post.author.photo.url}  
-					/>
-					<p className='inline align-middle text-gray-700 ml-2 mr-6 pt-1'>{post.author.name}</p>
-				</div>
-				<div className="font-medium text-gray-700 pt-2">
-					<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-red-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="blue">
-						<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-					</svg>
-					<span>
-						{moment(post.createdAt).format('MMM DD, YYYY')}
-					</span>
-				</div>
+		<div className='bg-white shadow-lg rounded-lg pb-12 mb-8'>
+			<div className='relative overflow-hidden shadow-md mb-6'>
+				<img 
+					src={post.featuredImage.url} 
+					alt={post.title}
+					className='object-top rounded-t-lg'
+					objectFit="cover"
+					width='auto'
+				/>
 			</div>
-			<h1 className='mb-8 text-3xl font-semibold'>{post.title}</h1>
-			{post.content.raw.children.map((typeObj, index) => {
-				const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item));
-				return getContentFragment(index, children, typeObj, typeObj.type);
-			})}
-		</div>
-	</div>
-  );
+			<div className='px-4 lg:px-8'>
+				<div className='flex justify-between items-center mb-2 w-full'>
+					<div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
+						<Image 
+						alt={post.author.name} 
+						height='30'
+						width='30'
+						className='align-middle rounded-full'
+						src={post.author.photo.url}  
+						/>
+						<p className='inline align-middle text-gray-700 ml-2 mr-6 pt-1'>{post.author.name}</p>
+					</div>
+					<div className="font-medium text-gray-700 pt-2">
+						<span>
+							{moment(post.createdAt).format('MMM DD, YYYY')}
+						</span>
+					</div>
+				</div>
+				<h1 className='mb-8 text-4xl font-bold text-center'>{post.title}</h1>
+				{post.content.raw.children.map((typeObj, index) => {
+					const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item));
+					return getContentFragment(index, children, typeObj, typeObj.type);
+				})}
+			</div>
+		</div>	
+  	);
 };

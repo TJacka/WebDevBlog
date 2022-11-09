@@ -21,20 +21,20 @@ export default function PostWidget({ categories, slug }) {
   }, [slug, categories]);
   
   return (
-    <div className='bg-white shadow-lg rounded-lg p-8 mb-8'>
+    <div className='bg-white rounded-lg pt-8 px-8 pb-4 mb-4'>
       <h3 className='text-xl mb-8 font-semibold border-b pb-4'>
         {slug ? 'Related Posts' : 'Recent Posts'}
       </h3>
       {relatedPosts.map((post) => (
-        <div key={post.title} className="flex items-center w-full mb-4 cursor-pointer">
+        <div key={post.title} className="flex items-center w-full cursor-pointer">
             <Link href={`/post/${post.slug}`} key={post.title} className="text-md">
-              <div className='flex'>
+              <div className='flex mb-4'>
                 <div className='w-16 mt-1 flex-none'>
                   <Image 
                     loader={graphCMSImageLoader}
                     src={post.featuredImage.url} 
                     alt={post.title}
-                    className='align-middle rounded-full hover:rounded-lg' 
+                    className='align-middle rounded-full shadow-inner shadow-gray-800' 
                     width='50'
                     height='50'
                   />
