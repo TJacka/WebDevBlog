@@ -24,7 +24,7 @@ export default function Header() {
                                                 </span>
                                         </div>
                                         <div>
-                                                <p className='cursor-pointer font-bold ml-10 text-xl text-slate-300 text-right'>
+                                                <p className='cursor-pointer font-bold text-lg text-slate-300 text-right'>
                                                         Web Technology Blog
                                                 </p>
                                         </div>
