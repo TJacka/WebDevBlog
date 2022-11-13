@@ -32,7 +32,7 @@ export default function Home({ posts }) {
           ))}
         </div>
         <div className="categories">
-          <div className="lg:sticky xl:flex lg:block md:hidden sm:hidden; xs:hidden relative top-24 w-60">
+          <div className="lg:sticky xl:flex lg:block md:block relative top-24 w-60 mx-auto">
             <Categories />
           </div>
         </div>

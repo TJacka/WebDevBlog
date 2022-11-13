@@ -15,7 +15,7 @@ const PostCard = ({ post }) => (
                 {post.title}
               </h1>
               <div>
-                <p className="text-start text-md leading-6 text-white text-shadow font-semibold">
+                <p className="text-start text-md leading-6 text-white text-shadow font-semibold post-descr">
                   {post.excerpt}
                 </p>
               </div>
@@ -23,7 +23,7 @@ const PostCard = ({ post }) => (
             </div>
               <div className="flex lg:flex flex-col text-end items-end justify-between mb-1">
                 <div>
-                  <div className="flex items-center mb-4 lg:mb-0 w-full lg:w-auto">
+                  <div className="flex items-center mb-4 lg:mb-0 w-full lg:w-auto poster">
                     <Image
                       unoptimized
                       loader={graphCMSImageLoader}
