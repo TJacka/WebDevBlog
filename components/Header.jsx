@@ -14,7 +14,7 @@ export default function Header() {
   
   return (
     <div className='container mx-auto pb-5 lg:sticky relative top-0 z-10 bg-black px-5'>
-        <div className='border-b w-full inline-block border-silver-400 py-4 mb-2'>
+        <div className='border-b w-full inline-block border-silver-400 py-4'>
                 <div className=''>
                         <Link href="/">
                                 <div className='flex justify-between items-center'>
@@ -25,21 +25,12 @@ export default function Header() {
                                         </div>
                                         <div>
                                                 <p className='cursor-pointer font-bold text-lg text-slate-300 text-right'>
-                                                        Web Technology Blog
+                                                        Web Tech Blog
                                                 </p>
                                         </div>
                                 </div>
                         </Link>
                 </div>
-                {/* <div className='hidden md:float-left md:contents'>
-                        {categories.map((category) => (
-                                <Link key={category.slug} href={`/category/${category.slug}`}>
-                                        <span className='md:float-right mt-2 align-middle text-slate-200 ml-4 font-semibold cursor-pointer'>
-                                                {category.name}
-                                        </span>
-                                </Link>
-                        ))}
-                </div> */}
         </div>
     </div>
   );

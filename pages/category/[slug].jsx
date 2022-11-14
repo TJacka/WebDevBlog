@@ -18,7 +18,7 @@ const CategoryPost = ({ posts }) => {
             <Categories />
           </div>
         </div>
-        <div className="">
+        <div className="lg:w-full mt-2">
           {posts.map((post, index) => (
             <PostCard key={index} post={post.node} />
           ))}

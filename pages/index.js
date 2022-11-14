@@ -26,7 +26,8 @@ export default function Home({ posts }) {
             <PostWidget />
           </div>
         </div>
-        <div className="top-22 xl:w-full">
+        <div className="top-24 xl:w-full">
+        <h2 className='text-white mb-2 font-semibold text-xl text-shadow'>Latest Posts:</h2>
           {posts.map((post) => (
             <PostCard post={post.node} key={[post.title]} />
           ))}

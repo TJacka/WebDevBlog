@@ -19,7 +19,7 @@ const PostDetails = ({ post }) => {
                 <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />
             </div>
           </div>
-          <div className="relative">
+          <div className="relative pt-2">
             <PostDetail post={post} />
             <Author author={post.author} />
             <AdjacentPosts slug={post.slug} createdAt={post.createdAt} />

@@ -23,7 +23,7 @@ export default function PostWidget({ categories, slug }) {
   return (
     <div className='bg-white rounded-lg pt-8 px-8 pb-4 mb-4'>
       <h3 className='text-xl mb-8 font-semibold border-b pb-4'>
-        {slug ? 'Related Posts' : 'Recent Posts'}
+        {slug ? 'Related Posts' : 'Trending Posts'}
       </h3>
       {relatedPosts.map((post) => (
         <div key={post.title} className="flex items-center w-full cursor-pointer">

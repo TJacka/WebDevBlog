@@ -56,6 +56,10 @@ const FeaturedPosts = () => {
 
   return (
     <div className="mb-8 mx-3">
+      <div className='flex justify-between'>
+        <h2 className='text-white mb-2 font-semibold text-xl text-shadow mx-3'>Featured Posts:</h2>
+        <h2 className='text-white mb-2 font-semibold text-lg text-shadow mx-3 md:hidden'><a href="category/webdev">Categories</a></h2>
+      </div>
       <Carousel infinite customLeftArrow={customLeftArrow} customRightArrow={customRightArrow} responsive={responsive} itemClass="">
         {dataLoaded && featuredPosts.map((post, index) => (
           <FeaturedPostCard key={index} post={post} />
