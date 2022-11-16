@@ -41,7 +41,7 @@ export default function PostWidget({ categories, slug }) {
                 </div>
                 <div className='flex flex-col xl:ml-4 lg:ml-0 mt-1'>
                   <p className='text-gray-500 font-semibold text-sm'>
-                    {moment(post.createdAt).format('MMM DD, YYYY')}
+                    {moment(post.createdAt).format('MMM, YYYY')}
                   </p>
                   {post.title}
                 </div>

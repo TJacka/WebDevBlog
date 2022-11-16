@@ -69,7 +69,7 @@ export default function PostDetail({ post }) {
 					</div>
 					<div className="font-medium text-gray-700 pt-2">
 						<span>
-							{moment(post.createdAt).format('MMM DD, YYYY')}
+							{moment(post.createdAt).format('MMM, YYYY')}
 						</span>
 					</div>
 				</div>

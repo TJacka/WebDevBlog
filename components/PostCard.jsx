@@ -11,11 +11,11 @@ const PostCard = ({ post }) => (
         <div className="grid grid-cols-2 shadow-zinc-400 shadow-inner hover:shadow-none rounded-md sm:p-10 xs:p-5 h-60 lg:h-80 bg-cover" style={{ backgroundImage: `url('${post.featuredImage.url}')` }}>
           <div className='flex flex-col justify-between w-full'>
             <div>
-              <h1 className="transition duration-700 mb-6 cursor-pointer hover:text-zinc-300 text-4xl font-bold text-white text-shadow">
+              <h1 className="transition duration-700 mb-6 cursor-pointer hover:text-zinc-300 text-4xl font-bold text-white text-shadow" style={{textShadow: "0 0 60px black"}}>
                 {post.title}
               </h1>
               <div>
-                <p className="text-start text-md leading-6 text-white text-shadow font-semibold post-descr">
+                <p className="text-start text-md leading-6 text-white text-shadow font-semibold post-descr" style={{textShadow: "0 0 60px black"}}>
                   {post.excerpt}
                 </p>
               </div>
@@ -31,15 +31,16 @@ const PostCard = ({ post }) => (
                       height='30'
                       width='30'
                       className="align-middle rounded-full"
-                      src={post.author.photo.url}
+                      src={post.author.photo.url} 
+                      style={{textShadow: "0 0 60px black"}}
                     />
-                    <p className="inline align-middle text-white ml-2 text-shadow font-bold text-lg">{post.author.name}</p>
+                    <p className="inline align-middle text-white ml-2 text-shadow font-bold text-lg" style={{textShadow: "0 0 60px black"}}>{post.author.name}</p>
                   </div>
                   <div className="font-medium text-gray-700 mt-2 mb-10">
-                    <span className="align-middle font-bold text-white text-shadow">{moment(post.createdAt).format('MMM DD, YYYY')}</span>
+                    <span className="align-middle font-bold text-white text-shadow" style={{textShadow: "0 0 60px black"}}>{moment(post.createdAt).format('MMM, YYYY')}</span>
                   </div>
                   </div>
-                  <div>
+                  <div style={{textShadow: "0 0 60px black"}}>
                     <Link href={`/post/${post.slug}`}>
                       <span className="transition duration-500 ease shadow-inner shadow-gray-400 transform hover:bg-blue-700 hover:text-white inline-block bg-blue-600 text-white text-lg font-bold rounded-full px-6 py-2 cursor-pointer xs:text-sm">Continue Reading</span>
                     </Link>
