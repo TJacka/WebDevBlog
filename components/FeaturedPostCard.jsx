@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import Link from 'next/link';
+import { graphCMSImageLoader } from '../utils';
 
 const FeaturedPostCard = ({ post }) => (
   <div className="relative h-72 mx-3">
@@ -12,6 +13,9 @@ const FeaturedPostCard = ({ post }) => (
             <span className="cursor-pointer absolute w-full h-full" />
             <p className="text-white my-2 text-shadow font-semibold text-xs" style={{textShadow: "0 0 60px black"}}>{moment(post.createdAt).format('MMM, YYYY')}</p>
             <p className="text-white mb-4 text-shadow font-bold text-2xl text-center" style={{textShadow: "0 0 60px black"}}>{post.title}</p>
+            <div className="flex items-center mb-4 lg:mb-0 w-full lg:w-auto poster">
+              <p className="inline align-middle text-white ml-2 text-shadow font-bold text-sm" style={{textShadow: "0 0 60px black", marginTop: "-10px"}}>{post.author.name}</p>
+            </div>
           </div>
         </Link>
       </div>
