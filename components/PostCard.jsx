@@ -8,7 +8,7 @@ const PostCard = ({ post }) => (
   <div className="rounded-lg p-0 pb-8">
     <Link href={`/post/${post.slug}`}>
       <div className='cursor-pointer'>
-        <div className="grid grid-cols-2 shadow-zinc-400 shadow-inner hover:shadow-none rounded-md sm:p-10 xs:p-5 h-60 lg:h-80 bg-cover" style={{ backgroundImage: `url('${post.featuredImage.url}')` }}>
+        <div className="grid grid-cols-2 shadow-zinc-200 shadow-inner hover:shadow-none rounded-md sm:p-10 xs:p-5 h-60 lg:h-80 bg-cover" style={{ backgroundImage: `url('${post.featuredImage.url}')` }}>
           <div className='flex flex-col justify-between w-full'>
             <div>
               <h1 className="transition duration-700 mb-6 cursor-pointer hover:text-zinc-300 text-4xl font-bold text-white text-shadow" style={{textShadow: "0 0 60px black"}}>
